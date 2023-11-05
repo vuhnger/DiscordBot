@@ -17,7 +17,7 @@ This Discord bot is written in Python and is designed to enhance the gaming expe
 To set up the bot for your server, follow these steps:
 
 1. **Clone the repository**:
-git clone https://github.com/yourusername/DiscordBot.git
+git clone https://github.com/vuhnger/DiscordBot
 cd DiscordBot
 
 2. **Install dependencies**:
