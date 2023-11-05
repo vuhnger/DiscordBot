@@ -11,7 +11,7 @@ fortnite_drop_spots = [
     "Flush Factory",
     "Fatal Fields",
     "Lucky Landing",
-    "Moisty Mire",
+    "Paradise Palms",
     "Retail Row",
     "Lonely Lodge",
     "Wailing Woods",
@@ -22,10 +22,14 @@ fortnite_drop_spots = [
     "Salty Springs"
 ]
 
+drop_commands = {'drop', 'd', 'droppe', 'spot'}
+
 def handle_response(message: str) -> str:
-    processed_message = message.lower()
+    processed_message: str = message.lower()
 
     if processed_message == 'help':
         return f'´Bruk ?drop for å få et landingssted fra meg.´'
     
-    return f'{fortnite_drop_spots[random.randint(0, len(fortnite_drop_spots))]}'
+    if processed_message in drop_commands:
+        return f'{fortnite_drop_spots[random.randint(0, len(fortnite_drop_spots))]}'
+    
