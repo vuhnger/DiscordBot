@@ -1,6 +1,6 @@
 # DiscordBot
 
-This Discord bot is written in Python and is designed to enhance the gaming experience for Fortnite players on Discord. It simplifies the decision-making process by randomly selecting landing spots within the game.
+This Discord bot is written in Python and is designed to enhance the gaming experience for Fortnite players on Discord. It simplifies the decision-making process by randomly selecting landing spots within the game. 
 
 ## Features
 
@@ -22,9 +22,10 @@ cd DiscordBot
 
 2. **Install dependencies**:
 pip install discord
+pip install python
 
 
-3. **Configuration**:
+4. **Configuration**:
 - Create a `config.py` file in the root directory.
 - Add your Discord bot token in `config.py`:
   ```python
